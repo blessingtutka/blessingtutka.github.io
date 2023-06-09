@@ -1,0 +1,105 @@
+
+/* General Style */
+body, html {
+height: 100%;
+}
+body {
+	color: #000;
+	font-size: 1rem;
+  font-weight: 400;
+	font-family: 'Roboto', sans-serif;
+	line-height: 1.80857;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+a {
+	color: #000;
+}
+a:hover {
+	color: #EB5300;
+}
+p {
+	font-weight: 600;
+}
+/* Page Styling section  */
+#body-bg {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+.page-wrapper {
+/*border: 1px solid red;*/
+height: 100%;
+margin: 0px auto;
+overflow: hidden;
+}
+@media (max-width:576px){
+	body{
+		font-size: 0.8rem;
+	}
+}
+
+/* ===========================
+Visit Section
+============================== */
+
+section.visit {
+    background-image: url("../img/visit-bg-3.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px 15px 30px 15px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+/* Header */
+.visit .header p{
+	position: relative;
+}
+.visit .header p:after{
+	position: absolute;
+	bottom: -0px;
+	width: 60px;
+	height: 5px;
+	background: red;
+	border-radius: 2px;
+	content: "";
+	display: block;
+	left: 0%;
+/*	transform: translatex(-50%);*/
+ }
+
+/* Info  */
+.visit .info p{
+	margin-bottom: 5px;
+}
+.visit .info p i{
+	color:#EB5300;
+}
+/* Social */
+.visit .social a{
+	color: #000;
+}
+.visit .social a i{
+	font-size: 32px;
+}
+/* Why */
+.visit .why ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.visit .why li {
+  padding-left: 1em;
+  text-indent: -1em;
+  font-weight: 600;
+}
+
+.visit .why li:before {
+  content: "🏀";
+  padding-right: 5px;
+}

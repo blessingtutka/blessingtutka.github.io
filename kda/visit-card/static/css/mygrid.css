@@ -1,0 +1,89 @@
+/*Some notes
+flex-grow   A number specifying how much the item will grow relative to the rest of the flexible items  
+flex-shrink A number specifying how much the item will shrink relative to the rest of the flexible items    
+flex-basis  The length of the item. Legal values: "auto", "inherit", or a number followed by "%", "px", "em" or any other length unit
+REM(rem): Calculate it's assigned value with the default root property value regardless to the parent class value property
+EM(em): Calculate it's assigned value with the parent class property value if it's set.
+vh: viewport height 100vh is the total screen height
+vw: viewport width 100vw is the total screen width
+*/
+/* ===========================
+Grid System
+============================== */
+/* Grid  */
+.container, .container-fluid{
+    width: 100%;
+    padding-right: .75rem;
+    padding-left: .75rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+    margin-right: -1.5rem;
+    margin-left: -1.5rem;
+}
+.row>* { /* All the child of the row class */
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: .75rem;
+    padding-left: .75rem;
+    margin-top: 0;
+}
+.col-12 {
+    flex: 0 0 auto;
+    width: 100%;
+}
+/* flex: flex-grow flex-shrink flex-basis|auto|initial|inherit/integervalue; */
+@media (min-width: 576px){
+.col-sm-12 {
+    flex: 0 0 auto;
+    width: 100%;
+}
+@media (min-width: 768px){
+.col-md-5 {
+    flex: 0 0 auto;
+    width: 41.66666667%;
+  }
+.col-md-7 {
+    flex: 0 0 auto;
+    width: 58.33333333%;
+}
+
+/* Flex Elements */
+.d-flex {
+	display: flex!important;
+}
+.justify-content-center{
+	justify-content: center!important;
+}
+.align-items-center{
+	align-items: center!important;
+}
+/* Margin Padding */
+.mb-0{
+	margin-bottom: 0rem!important;
+}
+.me-2{
+	margin-right: 0.5rem!important;
+}
+.mb-2{
+	margin-bottom: 0.5rem!important;
+}
+.mb-3{
+	margin-bottom: 1rem!important;
+}
+/* Font */
+.fw-bold {
+    font-weight: 700!important;
+}
+/* Size */
+.w-100{
+	width: 100%!important;
+}
+.h-100{
+	height: 100%!important;
+}
