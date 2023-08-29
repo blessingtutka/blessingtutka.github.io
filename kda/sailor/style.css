@@ -1,0 +1,684 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+/* =======================================================================
+COMMON STYLE 
+========================================================================== */
+
+* {
+  font-family: Poppins, monospace;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 32px;
+}
+a {
+  text-decoration: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #2a2a2a;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+ul {
+  margin-bottom: 0px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 25px;
+  color: #2a2a2a;
+}
+button {
+  border: none;
+  outline: none;
+}
+/*section{
+ scroll-margin-top: 100px; normally that would be equal to your header's height
+}*/
+section.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section.flex .container{
+  width: 90%;
+}
+
+/*  Session Title */
+.section-title {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.section-title span{
+  color: #4B9CD3;
+}
+.btn {
+  width: max-content !important;
+  font-size: 16 !important;
+  font-weight: bold !important;
+  background: #fff !important;
+  padding: 20px !important;
+  border-radius: 20px !important;
+  box-shadow: rgba(75, 156, 211, 0.1) 0px 4px 16px, rgba(75, 156, 211, 0.1) 0px 8px 24px, rgba(75, 156, 211, 0.1) 0px 16px 56px !important; 
+}
+.btn,.btn a {color:#4B9CD3}
+
+.btn:hover, .btn:hover a{
+    background: #4B9CD3 !important;
+    color: #fff !important;
+}
+/* =======================================================================
+ANIMATION STYLE 
+========================================================================== */
+/* FadIn */
+ @-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+ }
+
+ @keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+ }
+
+ .fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+/* fadeInUp */
+
+@keyframes fadeInUp {
+ 0% {
+    opacity: 0;
+    transform: translateY(-200px);
+ }
+ 100% {
+    opacity: 1;
+    transform: translateY(0);
+ }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+/* fadeInDown */
+@keyframes fadeInDown {
+ 0% {
+    opacity: 0;
+    transform: translateY(200px);
+ }
+ 100% {
+    opacity: 1;
+    transform: translateY(0);
+ }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+/* FadeInLeft  */
+ @keyframes fadeInLeft {
+  0% {
+     opacity: 0;
+     transform: translateX(-2000px);
+  }
+  100% {
+     opacity: 1;
+     transform: translateX(0);
+  }
+}
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+/* fadeInRight  */
+ @keyframes fadeInRight {
+  0% {
+     opacity: 0;
+     transform: translateX(2000px);
+  }
+  100% {
+     opacity: 1;
+     transform: translateX(0);
+  }
+}
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+/* =======================================================================
+HEADER STYLE 
+========================================================================== */
+.page-header {
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  transition: opacity 0.3s ease; /* Add a transition for smooth fade-in effect */
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 99;
+  box-shadow: rgba(75, 156, 211, 0.1) 0px 4px 6px -1px, rgba(75, 156, 211, 0.06) 0px 2px 4px -1px;
+}
+
+.fixed {
+  position: fixed;
+  transition: all 0.3s ease 0s;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.header {
+  width: 96%;
+  padding: 20px 0px 10px 0px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.header .logo {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .logo h1 {
+  color: #4B9CD3;
+}
+.header .nav {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
+
+.header .nav .menu-trigger {
+  display: none;
+}
+
+.header .nav ul {
+  width: 80%;
+  padding: 0px;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.header .nav ul li a {
+  font-weight: 550;
+  color: #2a2a2a;
+}
+.header .nav ul li:hover a,
+.header .nav ul li.active a {
+  color: #4B9CD3;
+}
+.header .nav ul li:hover .sub-nav a{color: #2a2a2a;}
+.header .nav ul li:hover .sub-nav a:hover{color: #4B9CD3;}
+/* =======================================================================
+BANNER STYLE 
+========================================================================== */
+.banner .container{
+  height: 400px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.banner .container img {
+    width: 100%;
+    height: 100%;
+    min-width: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+.banner .content {
+  position: absolute;
+  top: 40%;
+  padding: 20px;
+}
+.banner .content.text-center * {
+  text-align: center;
+}
+.banner .content h1 {
+  color:#4B9CD3;
+}
+.banner .content h2 {
+  color:#fff;
+}
+/* Paginator */
+.paginator .content {
+  top: 25%;
+}
+.paginator .content * {
+  font-size: 48px;
+}
+
+/* =======================================================================
+ABOUT STYLE 
+========================================================================== */
+.about  .container{
+  display: flex;
+  justify-content: space-around;
+}
+.about .image {
+  width: 40%;
+}
+.about .image img {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(75, 156, 211) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px;
+  object-fit: cover;
+  object-position: center;
+
+}
+.about .content {
+  width: 55%;
+}
+
+.about .content p span{
+  color: #4B9CD3 ;
+}
+
+/* =======================================================================
+SERVICE STYLE 
+========================================================================== */
+
+.service  .container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 30px;
+  grid-template-areas: "box1 box2" "box3 box4";
+}
+
+
+.service .box{
+  background-color: rgba(75, 156, 211, 0.3);
+  box-shadow: rgba(75, 156, 211, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+  padding: 60px;
+  color: #4B9CD3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.service .box div{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.service .box div *{
+  text-align: center;
+}
+.service .box i {
+  font-size: 50px;
+}
+.service .box h1,.box h4 {color: #4B9CD3;}
+.service .box p { font-size:18px; font-weight:bolder; }
+
+.service .box1{
+  background-image: url('images/service.jpeg');
+  background-color: transparent;
+  box-shadow: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  object-fit: cover;
+  object-position: center;
+  grid-area: box1;
+}
+.service .box1 p { color:#fff; font-size:18px; font-weight:bolder; }
+
+.service .box2{grid-area: box2;}
+
+.service .box3{grid-area: box3;}
+
+.service .box4{grid-area: box4;}
+
+/* =======================================================================
+ACTION STYLE 
+========================================================================== */
+
+.call-to-action {
+  margin-top: 50px;
+  background-image: url(images/action2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 75px 30px;
+}
+.call-to-action .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+}
+.call-to-action .content{ width:75% }
+.call-to-action .button{ width:25% }
+
+.call-to-action h2 {
+  font-size: 40px;
+  color: #fff;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.call-to-action h4 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+/* =======================================================================
+CONTACT STYLE 
+========================================================================== */
+.contact .container {
+  background-color: rgba(75, 156, 211, 0.1);
+  box-shadow: rgba(75, 156, 211, 0.4) 0px 3px 8px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+.contact .content,.contact .map {
+  height: 100%;
+}
+.contact .content{
+  width: 50%;
+ display: flex;
+ justify-content: center;
+ align-items: center; 
+
+}
+.contact .content form {
+  width: 65%;
+}
+.contact .content textarea ,
+.contact .content input{
+  display: block;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: rgba(75, 156, 211, 0.3);
+  box-shadow: rgba(75, 156, 211, 0.24) 0px 3px 8px;
+  border: none;
+}
+.contact .content textarea:focus,
+.contact .content input:focus{
+  border: 1px solid rgb(75, 156, 211);
+  box-shadow: none;
+  outline: none;
+}
+.contact .map {
+  width: 50%;
+  height: 500px;
+  border-radius: 10px;
+
+}
+.contact .map * {
+  height: 100%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  overflow: hidden;
+}
+
+/* =======================================================================
+RESERVATION PAGE STYLE 
+========================================================================== */
+
+.book  .container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 350px 350px;
+  grid-gap: 30px;
+  grid-template-areas: "box1 box2" "box3 .";
+}
+
+
+.book .box{
+  border-radius: 10px;
+  padding: 50px;
+  color: #4B9CD3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  object-fit: cover;
+  object-position: center;
+
+}
+.book .box div{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.book .box div *{
+  text-align: center;
+}
+
+.book .box h4 {color: #4B9CD3; font-size: 38px}
+
+.book .box1{ background-image: url('images/airplane.jpg');grid-area: box1;}
+
+.book .box2{background-image: url('images/ship.jpeg'); grid-area: box2;}
+
+.book .box3{background-image: url('images/bus.jpg');grid-area: box3;}
+
+/* =======================================================================
+AIRPLANE PAGE STYLE 
+========================================================================== */
+.plane  .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plane .trips .item{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #4B9CD3;
+}
+.plane .trips .item.last {
+  border-bottom: none;
+}
+
+
+.plane .trips .item .image {
+  width: 38%;
+}
+
+.plane .trips .item .image img {
+  width: 100%;
+  border-radius: 30px;
+}
+
+.plane .trips .item .content{
+  width: 60%;
+  position: relative;
+}
+
+.plane .trips .item h4 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.plane .trips .item  span {
+  font-size: 15px;
+  color: #afafaf;
+  display: block;
+}
+
+.plane .trips .item .btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+
+.plane .trips .item p {
+  margin: 18px 0px;
+}
+
+.plane .trips .item ul {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 15px 0px;
+}
+
+.plane .trips .item  ul li {
+  display: inline-block;
+  width: 32%;
+  color: #afafaf;
+  font-size: 14px;
+}
+
+.plane .trips .item ul li:nth-child(2) {
+  text-align: center;
+}
+
+.plane .trips .item  ul li:last-child {
+  text-align: right;
+}
+
+.plane .trips .item ul li i {
+  color: #4B9CD3;
+  margin-right: 5px;
+  font-size: 16px;
+}
+
+.plane .trips .item .text-button {
+  margin-top: 20px;
+}
+.plane .trips .item .text-button a {
+  color: #4B9CD3;
+}
+.plane .trips ul.page-numbers {
+  text-align: center;
+}
+
+.plane .trips ul.page-numbers li {
+  display: inline-block;
+  margin: 0px 5px;
+}
+
+.plane .trips ul.page-numbers li a {
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  border: 1px solid #4B9CD3;
+  line-height: 44px;
+  color: #4B9CD3;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 50%;
+  transition: all .3s;
+}
+
+.plane .trips ul.page-numbers li a:hover {
+  background-color: #4B9CD3;
+  color: #fff;
+}
+
+.plane .trips ul.page-numbers li.active a {
+  background-color: #4B9CD3;
+  color: #fff;
+}
+
+.plane .trips ul.page-numbers li:first-child a,
+.plane .trips ul.page-numbers li:last-child a {
+  border: none;
+}
+
+/* =======================================================================
+FOOTER STYLE 
+========================================================================== */
+
+footer {
+  background-color: #4B9CD3;
+  text-align: center;
+  padding: 5px 0px;
+}
+
+footer p {
+  color: #fff;
+}
+
+footer p a {
+  color: #fff;
+  font-weight: 500;
+  transition: all .3s;
+}
+
+footer p a:hover {
+  color: #fff;
+  opacity: 0.75;
+}
+
+footer  .icon {
+  display: flex;
+  justify-content: center;
+}
+footer  .icon div {
+  width: 15%;
+  display: flex;
+  justify-content: space-around;
+}
+footer  .icon i {
+  padding: 10px;
+  color: #fff;
+  font-size: 20px;
+}
+footer  .icon i:hover {
+  color: #fff;
+  background-color:#4B9CD3 ;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  
+}
