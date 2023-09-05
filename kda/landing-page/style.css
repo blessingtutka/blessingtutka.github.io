@@ -1,0 +1,542 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+/* =======================================================================
+COMMON STYLE 
+========================================================================== */
+
+* {
+  font-family: Poppins, monospace;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 32px;
+}
+a {
+  text-decoration: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #2a2a2a;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+ul {
+  margin-bottom: 0px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 25px;
+  color: #2a2a2a;
+}
+section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-bottom: 2px dotted #EEEEEE;
+}
+section .head{
+	margin-bottom: 30px;
+}
+section .head p{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+/* =======================================================================
+HEADER STYLE 
+========================================================================== */
+.header {
+  padding: 20px 0px 10px 0px;
+  border-bottom: 3px dotted #EEEEEE;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .logo {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+.header .nav {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
+
+.header .nav .menu-trigger {
+  display: none;
+}
+
+.header .nav ul {
+  width: 60%;
+  padding: 0px;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.header .nav ul li {
+  font-weight: 550;
+  color: #2a2a2a;
+}
+
+.header .nav ul li.active {
+  color: #A7B0B6;
+}
+
+/* =======================================================================
+BANNER STYLE 
+========================================================================== */
+.banner {
+  height: 650px;
+  padding: 50px 10px 50px 10px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-gap: 20px;
+  grid-template-areas:
+    "left right1 right2 "
+    "left right3 right4";
+  box-sizing: border-box;
+}
+
+.banner .left,
+.banner .right {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* .banner .left{
+  justify-content: flex-start;
+  padding-left:5%
+} */
+
+.banner .content * {
+  color: #fff;
+}
+
+.banner .content.text-center * {
+  text-align: center;
+}
+
+.banner .content button {
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+  padding: 10px;
+}
+
+.banner .left {
+  background-image: url(images/left-banner-image.jpg);
+  grid-area: left;
+}
+
+.banner .right1 {
+  background-image: url(images/baner-right-image-01.jpg);
+  grid-area: right1;
+}
+
+.banner .right2 {
+  background-image: url(images/baner-right-image-02.jpg);
+  grid-area: right2;
+}
+
+.banner .right3 {
+  background-image: url(images/baner-right-image-03.jpg);
+  grid-area: right3;
+}
+
+.banner .right4 {
+  background-image: url(images/baner-right-image-04.jpg);
+  grid-area: right4;
+}
+
+/* =======================================================================
+ARTICLES STYLE 
+========================================================================== */
+.article {
+  display: flex;
+  justify-content: center;
+}
+
+.article .container {
+  width: 85%;
+}
+
+.article .head h1 {
+  margin-bottom: 0px;
+}
+
+.article .head p {
+  margin-top: 0px;
+  color: #A7B0B6;
+}
+
+.article .content {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.article .content .item {
+  width: 31.5%;
+}
+
+.article .content .item img {
+  width: 100%;
+
+}
+
+.article .content .item .down-content {
+  padding: 5px 0px 10px 0px;
+}
+
+.article .content .item .down-content div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.article .content .item .down-content div p {
+	font-size: 22px;
+	margin-bottom: 8px;
+}
+
+.article .content .item .down-content span {
+	color: #A7B0B6;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.article .content .item .down-content .stars {
+	display: flex;
+}
+
+.article .content .item .down-content .stars i {
+	font-size: 11px;
+	padding: 2px;
+}
+
+.article .content .prev,
+.article .content .next {
+	width: 40px;
+	height: 40px;
+	border: 1px solid #A7B0B6;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 30%;
+	transition: 0.7s;
+	opacity: 1;
+	box-sizing: border-box;
+}
+
+.article .content .prev {
+  left: -5%;
+}
+
+.article .content .next {
+  right: -5%;
+}
+
+
+/* =======================================================================
+EXPLORE STYLE 
+========================================================================== */
+.explore {
+  display: flex;
+  justify-content: center;
+}
+
+.explore .container {
+  width: 85%;
+  height: 500px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-gap: 20px;
+  grid-template-areas:
+    "left right1 right2 "
+    "left right3 right4";
+  box-sizing: border-box;
+}
+
+.explore .container .left,
+.explore .container .right {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.explore .content p {
+	font-size: 14px ;
+	color: #aaaaaa;
+}
+
+.explore .content p.quote {
+  color: #2a2a2a;
+  font-style: italic;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+}
+
+.explore .content p.quote i {
+  font-size: 40px;
+  padding-right: 10px;
+}
+
+
+.explore .content a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.explore .content button {
+  color: #2a2a2a;
+  background-color: transparent;
+  border: 1px solid #2a2a2a;
+  padding: 10px;
+}
+
+.explore .content.text-center * {
+  text-align: center;
+}
+
+.explore .container .left {
+  grid-area: left;
+}
+
+.explore .container .left .content {
+  align-self: flex-start;
+}
+
+.explore .container .right1 {
+  background-color: #F8F8F8F8;
+  grid-area: right1;
+}
+
+.explore .container .right2 {
+  background-image: url(images/explore-image-01.jpg);
+  grid-area: right2;
+}
+
+.explore .container .right3 {
+  background-image: url(images/explore-image-02.jpg);
+  grid-area: right3;
+}
+
+.explore .container .right4 {
+  background-color: #F8F8F8F8;
+  grid-area: right4;
+}
+
+/* =======================================================================
+MEDIA STYLE 
+========================================================================== */
+.media {
+  display: flex;
+  justify-content: center;
+}
+
+.media .container {
+  width: 85%;
+}
+
+.media .head h1 {
+  margin-bottom: 0px;
+}
+
+.media .head p {
+  margin-top: 0px;
+  color: #A7B0B6;
+}
+
+.media .container .content {
+  display: flex;
+  justify-content: space-between
+}
+
+.media .container .content img {
+  flex: 1;
+  object-fit: cover;
+  width: 16.6%;
+}
+
+/* =======================================================================
+CONTACT STYLE 
+========================================================================== */
+.contact {
+  display: flex;
+  justify-content: center;
+  border-bottom: none;
+  margin-bottom: 50px;
+}
+
+.contact .container {
+  width: 85%;
+  display: flex;
+}
+
+.contact p {
+  color: #A7B0B6;
+}
+
+.contact .forms {
+  width: 65%;
+  padding-right: 40px;
+
+}
+
+.contact .forms form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact .forms form button {
+  width: 50px;
+  height: 50px;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  background-color: #2a2a2a;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.contact .forms form button i {
+  font-size: 14px;
+/*  font-weight: normal;*/
+}
+
+.contact .forms form input {
+  width: 42.5%;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid #2a2a2a;
+  font-size: 16px;
+  padding: 15px;
+  box-sizing: border-box;
+
+
+}
+
+.contact .info {
+  width: 35%;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.contact .info div {
+  width: 50%;
+  padding-bottom: 20px;
+}
+
+
+.contact .info div p {
+	font-size: 14px;
+	font-weight: 400px;
+	margin: 0;
+	padding: 0;
+}
+.contact .info  p b {
+  color: #2a2a2a;
+  font-size: 16px;
+  font-weight: 700px;
+
+}
+
+/* =======================================================================
+FOOTER STYLE 
+========================================================================== */
+.footer {
+	background-color: #2a2a2a;
+	color: whitesmoke;
+	display: flex;
+	justify-content: center;
+}
+
+.footer .container {
+	width: 85%;
+	padding: 30px 0px 30px 0px;
+}
+.footer .container  * {
+	color: #fff;
+}
+
+.footer .container .content {
+	border-bottom: 1px solid #A7B0B6;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-bottom: 30px;
+}
+
+.footer .container .content div {
+	width: 25%;
+}
+.footer .container .content div h4 {
+	padding-bottom: 10px;
+ }
+
+.footer .container .content div ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  line-height: 35px;
+}
+.footer .container .content div ul li 
+{
+	font-size: 14px;
+}
+.footer .container .copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.footer .container .copy p {
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+.footer .container .copy a {
+  text-decoration: none;
+  color: #cff;
+}
+
+.footer .container .copy .icon {
+  width: 15%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+.footer .container .copy .icon i {
+  color: #cff;
+  font-size: 20px;
+}
