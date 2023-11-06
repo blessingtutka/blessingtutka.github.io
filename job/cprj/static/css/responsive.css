@@ -259,6 +259,40 @@ Contact Page
 * About Style
 ====================================================
 */
+/* value */
+@media (max-width: 991.98px) {
+  .value .section-title .title,.value .section-title .sub-title  {
+    color: #fff;
+  }
+  .value {
+    margin-bottom: 30px;
+    padding: 60px 15px;
+    background-color: rgba(0, 0, 0, .8);
+  }
+
+  .value .value-detail-title {
+    font-size: 25px;
+    color:#067593;
+    margin-top: 10px;
+  }
+  .value .value-detail-desc {
+    color:#fff;
+    font-size: 18px;
+  }
+
+  .value .value-detail-soul,
+  .value .value-detail-health,
+  .value .value-detail-relax,
+  .value .value-detail-energy,
+  .value .value-detail-mind,
+  .value .value-detail-meditat {
+    width: 100%;  
+    text-align: center;
+    margin: 0 auto 24px;
+ 
+  }
+}
+/*MVO*/
 @media (min-width: 576px){
   .mission-objecif .col-sm-6 {
     width: calc(100%);
@@ -271,12 +305,14 @@ Contact Page
     margin-right: 20px;
   }
 }
+
 @media (min-width: 992px){
   .mission-objecif .col-lg-4 {
     width: calc(33.33% - 10px);
     margin-right: 10px;
   }
 }
+
 
 /*! 
 ====================================================

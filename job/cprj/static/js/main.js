@@ -32,30 +32,5 @@ if($('.menu-trigger').length){
   });
 }
 
-function autoWriteMessage() {
-  const message = "Cliquez sur l'emballage de l'image pour voir l'image!";
-  let index = 0;
-  let timeoutId;
-
-  function typeNextCharacter() {
-    const messageElement = document.querySelector("#auto-writing-message");
-    if (index < message.length) {
-      messageElement.textContent += message.charAt(index);
-      index++;
-      timeoutId = setTimeout(typeNextCharacter, 100); // Adjust typing speed as needed
-    } else {
-      clearTimeout(timeoutId); // Clear the timeout if typing is complete
-      messageElement.textContent = ""; // Clear the message
-      index = 0;
-      setTimeout(autoWriteMessage, 2500); // Repeat after 5 seconds
-    }
-  }
-
-  typeNextCharacter();
-}
-
-// Call autoWriteMessage to start the auto-writing message
-autoWriteMessage();
-
 });
 

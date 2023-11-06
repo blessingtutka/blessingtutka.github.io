@@ -471,7 +471,13 @@ textarea:-ms-input-placeholder { color: #fff; }
 /*===================================================
 About Page
 =====================================================*/
-/* Section image */
+/* Facts section */
+
+.fact-item{
+  background: linear-gradient(45deg, rgba(6,117,147,1) 0%, rgba(5,74,93,1) 51%, rgba(3,38,41,1) 100%);
+  color: #fff;
+}
+/* Historiqe section */
 .img-border {
     position: relative;
     height: 100%;
@@ -496,9 +502,70 @@ About Page
     object-fit: cover;
     border-radius: 6px;
 }
-/* Section content */
-
-/* Mision vison objectif  */
+/* Value Section */
+ .value {
+  padding: 60px 15px 270px;
+}
+ .value {
+    background-image: url(../img/value.png),url(../img/dotted-image.svg),url(../img/dotted-image2.svg);
+/*    background-size: ;*/
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: center center, top left, bottom right;
+}
+ .value .value-detail a:hover {
+  text-decoration: none;
+}
+ .value .value-detail a:hover .value-detail-title {
+  text-decoration: none;
+  color: #067593;
+}
+ .value .value-detail-title {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.6px;
+  font-weight: 600;
+  color: #444;
+}
+ .value .value-detail-desc {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: 25px;
+  letter-spacing: 0.45px; 
+  color: #666;
+}
+ .value .value-detail-img i{
+  font-size: 50px;
+  color: #067593;
+  height: auto;
+}
+ .value .value-detail-soul,
+ .value .value-detail-health,
+ .value .value-detail-relax {
+  text-align: right;
+  width: 50%; 
+}
+ .value .value-detail-soul {
+  margin: 0 0 24px auto; 
+}
+ .value .value-detail-health {
+  margin: 0 auto 24px;
+}
+ .value .value-detail-energy,
+ .value .value-detail-mind,
+ .value .value-detail-meditat {
+  width: 50%; 
+}
+ .value .value-detail-energy {
+  margin-bottom: 24px;
+}
+ .value .value-detail-mind {
+  margin: 0 auto 24px;
+}
+ .value .value-detail-meditat {
+  margin-left: auto; 
+}
+/* Mision vison objectif Section  */
 .mvo {
   padding: 0px;
   border-radius: 10px;
@@ -605,6 +672,7 @@ section.contact .info-item a:hover {
 /* Footer Style */
 footer {
   background-color: #232323;
+  background-image: url(../img/lined-image.svg);
   padding: 80px 0px;
   color: #fff;
 }
