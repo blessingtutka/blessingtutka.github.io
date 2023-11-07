@@ -59,21 +59,21 @@ section.flex .container{
   margin-bottom: 20px;
 }
 .section-title span{
-  color: #4B9CD3;
+  color: #0079BF;
 }
 .btn {
   width: max-content !important;
-  font-size: 16 !important;
+  font-size: 18px !important;
   font-weight: bold !important;
   background: #fff !important;
   padding: 20px !important;
   border-radius: 20px !important;
   box-shadow: rgba(75, 156, 211, 0.1) 0px 4px 16px, rgba(75, 156, 211, 0.1) 0px 8px 24px, rgba(75, 156, 211, 0.1) 0px 16px 56px !important; 
 }
-.btn,.btn a {color:#4B9CD3}
+.btn,.btn a {color:#0079BF}
 
 .btn:hover, .btn:hover a{
-    background: #4B9CD3 !important;
+    background: #0079BF !important;
     color: #fff !important;
 }
 /* =======================================================================
@@ -216,7 +216,7 @@ HEADER STYLE
   align-items: center;
 }
 .header .logo h1 {
-  color: #4B9CD3;
+  color: #0079BF;
 }
 .header .nav {
   width: 70%;
@@ -242,10 +242,10 @@ HEADER STYLE
 }
 .header .nav ul li:hover a,
 .header .nav ul li.active a {
-  color: #4B9CD3;
+  color: #0079BF;
 }
 .header .nav ul li:hover .sub-nav a{color: #2a2a2a;}
-.header .nav ul li:hover .sub-nav a:hover{color: #4B9CD3;}
+.header .nav ul li:hover .sub-nav a:hover{color: #0079BF;}
 /* =======================================================================
 BANNER STYLE 
 ========================================================================== */
@@ -272,7 +272,7 @@ BANNER STYLE
   text-align: center;
 }
 .banner .content h1 {
-  color:#4B9CD3;
+  color:#0079BF;
 }
 .banner .content h2 {
   color:#fff;
@@ -308,7 +308,7 @@ ABOUT STYLE
 }
 
 .about .content p span{
-  color: #4B9CD3 ;
+  color: #0079BF ;
 }
 
 /* =======================================================================
@@ -329,7 +329,7 @@ SERVICE STYLE
   box-shadow: rgba(75, 156, 211, 0.24) 0px 3px 8px;
   border-radius: 10px;
   padding: 60px;
-  color: #4B9CD3;
+  color: #0079BF;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -349,21 +349,34 @@ SERVICE STYLE
 .service .box i {
   font-size: 50px;
 }
-.service .box h1,.box h4 {color: #4B9CD3;}
+.service .box h1,.box h2 {color: #0079BF;}
 .service .box p { font-size:18px; font-weight:bolder; }
 
 .service .box1{
+  background-color: rgba(75, 156, 211, .1);
+  object-fit: cover;
+  position: relative;
+  grid-area: box1;
+}
+.service .box1::before {
+  content: "";
   background-image: url('images/service.jpeg');
-  background-color: transparent;
   box-shadow: none;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100% 100%;
+  background-size: cover;
+  border-radius: 10px;
   object-fit: cover;
   object-position: center;
-  grid-area: box1;
+  opacity: 0.7; 
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
 }
-.service .box1 p { color:#fff; font-size:18px; font-weight:bolder; }
+.service .box1 p { color:#0E2038; font-size:18px; font-weight:bolder; }
 
 .service .box2{grid-area: box2;}
 
@@ -399,7 +412,7 @@ ACTION STYLE
   text-transform: uppercase;
 }
 
-.call-to-action h4 {
+.call-to-action h3 {
   font-size: 20px;
   color: #fff;
   font-weight: 600;
@@ -478,7 +491,7 @@ RESERVATION PAGE STYLE
 .book .box{
   border-radius: 10px;
   padding: 50px;
-  color: #4B9CD3;
+  color: #0079BF;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -500,9 +513,10 @@ RESERVATION PAGE STYLE
   text-align: center;
 }
 
-.book .box h4 {color: #4B9CD3; font-size: 38px}
+.book .box h4 {color: #0079BF; font-size: 38px}
 
 .book .box1{ background-image: url('images/airplane.jpg');grid-area: box1;}
+
 
 .book .box2{background-image: url('images/ship.jpeg'); grid-area: box2;}
 
@@ -522,7 +536,7 @@ AIRPLANE PAGE STYLE
   justify-content: space-around;
   margin-bottom: 20px;
   padding-bottom: 20px;
-  border-bottom: 1px solid #4B9CD3;
+  border-bottom: 1px solid #0079BF;
 }
 .plane .trips .item.last {
   border-bottom: none;
@@ -543,14 +557,14 @@ AIRPLANE PAGE STYLE
   position: relative;
 }
 
-.plane .trips .item h4 {
+.plane .trips .item h2 {
   font-size: 20px;
   margin-bottom: 5px;
 }
 
 .plane .trips .item  span {
   font-size: 15px;
-  color: #afafaf;
+  color: #797676;
   display: block;
 }
 
@@ -574,7 +588,7 @@ AIRPLANE PAGE STYLE
 .plane .trips .item  ul li {
   display: inline-block;
   width: 32%;
-  color: #afafaf;
+  color: #797676;
   font-size: 14px;
 }
 
@@ -587,7 +601,7 @@ AIRPLANE PAGE STYLE
 }
 
 .plane .trips .item ul li i {
-  color: #4B9CD3;
+  color: #0079BF;
   margin-right: 5px;
   font-size: 16px;
 }
@@ -596,7 +610,7 @@ AIRPLANE PAGE STYLE
   margin-top: 20px;
 }
 .plane .trips .item .text-button a {
-  color: #4B9CD3;
+  color: #0079BF;
 }
 .plane .trips ul.page-numbers {
   text-align: center;
@@ -611,9 +625,9 @@ AIRPLANE PAGE STYLE
   display: inline-block;
   width: 46px;
   height: 46px;
-  border: 1px solid #4B9CD3;
+  border: 1px solid #0079BF;
   line-height: 44px;
-  color: #4B9CD3;
+  color: #0079BF;
   text-align: center;
   font-size: 18px;
   font-weight: 500;
@@ -622,12 +636,12 @@ AIRPLANE PAGE STYLE
 }
 
 .plane .trips ul.page-numbers li a:hover {
-  background-color: #4B9CD3;
+  background-color: #0079BF;
   color: #fff;
 }
 
 .plane .trips ul.page-numbers li.active a {
-  background-color: #4B9CD3;
+  background-color: #0079BF;
   color: #fff;
 }
 
@@ -641,7 +655,7 @@ FOOTER STYLE
 ========================================================================== */
 
 footer {
-  background-color: #4B9CD3;
+  background-color: #0079BF;
   text-align: center;
   padding: 5px 0px;
 }
@@ -677,7 +691,7 @@ footer  .icon i {
 }
 footer  .icon i:hover {
   color: #fff;
-  background-color:#4B9CD3 ;
+  background-color:#0079BF ;
   border: 2px solid #fff;
   border-radius: 50%;
   

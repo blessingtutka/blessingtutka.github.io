@@ -22,7 +22,7 @@
   left: 0;
   z-index: 999;
   top: calc(1.5em + 14px);
-  border: 1px solid #4B9CD3;
+  border: 1px solid #0079BF;
   background: #fff;
   padding: 6px 0;
   margin: 0;
@@ -41,7 +41,7 @@
   padding: 6px 15px;
   text-decoration: none;
   color: #2a2a2a;
-  border-bottom: 1px solid #4B9CD3;
+  border-bottom: 1px solid #0079BF;
   box-sizing: border-box;
 }
 
@@ -52,7 +52,7 @@
 
 .header .nav .sub-nav li a:hover,
 .header .nav .sub-nav li a:focus {
-  color: #4B9CD3;
+  color: #0079BF;
 }
 
 .header .nav  ul li:hover > ul,
