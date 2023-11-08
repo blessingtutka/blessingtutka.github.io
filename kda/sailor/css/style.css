@@ -360,7 +360,7 @@ SERVICE STYLE
 }
 .service .box1::before {
   content: "";
-  background-image: url('images/service.jpeg');
+  background-image: url('../images/service.jpeg');
   box-shadow: none;
   background-repeat: no-repeat;
   background-position: center;
@@ -390,7 +390,7 @@ ACTION STYLE
 
 .call-to-action {
   margin-top: 50px;
-  background-image: url(images/action2.jpg);
+  background-image: url(../images/action2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -515,12 +515,12 @@ RESERVATION PAGE STYLE
 
 .book .box h4 {color: #0079BF; font-size: 38px}
 
-.book .box1{ background-image: url('images/airplane.jpg');grid-area: box1;}
+.book .box1{ background-image: url('../images/airplane.jpg');grid-area: box1;}
 
 
-.book .box2{background-image: url('images/ship.jpeg'); grid-area: box2;}
+.book .box2{background-image: url('../images/ship.jpeg'); grid-area: box2;}
 
-.book .box3{background-image: url('images/bus.jpg');grid-area: box3;}
+.book .box3{background-image: url('../images/bus.jpg');grid-area: box3;}
 
 /* =======================================================================
 AIRPLANE PAGE STYLE 
