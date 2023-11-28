@@ -1,0 +1,246 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Shopify</title>
+
+	<!-- TITLE LOGO -->
+	<link rel="icon" type="image/png" href="https://crushingit.tech/hackathon-assets/shopify-icon.svg">
+
+
+	<!-- STYLE SHEET CSS -->
+	<link rel="stylesheet" href="app.css">  
+    
+</head>
+
+<body>
+
+	<!-- PAGE WRAPPER START -->
+	<div class="wrapper">
+
+		<!-- NAVBAR HAEDER SART -->
+		<header>
+
+			<nav>
+				<a href="https://shopify.com" tabindex="0" title="Visit Shopify">
+					<img src="https://crushingit.tech/hackathon-assets/shopify-icon-desktop.svg" alt="Shopify-icon" id="Shopify-icon">
+				</a>
+			    <div class="search-container">
+				    <label for="search-input" class="visually-hidden">Search:</label>
+				    <input type="search" id="search-input" placeholder="Search" class="search-input" aria-label="Search">
+			        <img src="https://crushingit.tech/hackathon-assets/icon-search.svg" alt="Search Icon" class="search-icon">
+				</div>
+
+			    <div class="account">
+				    <div class="acc noti"> 
+				    	<button id="notification-menu" aria-haspopup='true' aria-expanded='false' aria-controls='notification-menu-content' class="popup"><img src="https://crushingit.tech/hackathon-assets/icon-bell.svg" alt="bell-icon"></button>
+				    	<div class="dropdown" id="notification-menu-content" role='menu' aria-labelledby='notification-menu'>
+				    		<div class="title">
+				    			<p>Alerts</p>
+				    			<div class="icons">
+				    				<img src="https://crushingit.tech/hackathon-assets/icon-filter.svg" class="icon filter">
+				    				<img src="https://crushingit.tech/hackathon-assets/icon-check-empty-circle.svg" class="icon check">
+				    			</div>
+				    		</div>
+				    		<div class="alerts">
+				    			<p>Alerts about your store and account will show here</p>
+				    		</div>
+				    	</div>
+				    </div>
+				    <div class='acc user'>
+				    	<button id="profile-menu" aria-haspopup='true' aria-expanded='false' aria-controls='profile-menu-content' class="popup" aria-label=''>
+				    		<span class="name">Davii Collections</span><span class="type">DC</span>
+				    	</button>
+			    		<ul class="dropdown" id="profile-menu-content" role='menu' aria-labelledby='profile-menu'>
+				    		<li class="title menu-item ">
+				    			<span class="name "><span class="type">DC</span>Davii Collections</span>
+				    			<div class="icons">
+				    				<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								    <path
+								      d="M17.2738 8.52629C17.6643 8.91682 17.6643 9.54998 17.2738 9.94051L11.4405 15.7738C11.05 16.1644 10.4168 16.1644 10.0263 15.7738L7.3596 13.1072C6.96908 12.7166 6.96908 12.0835 7.3596 11.693C7.75013 11.3024 8.38329 11.3024 8.77382 11.693L10.7334 13.6525L15.8596 8.52629C16.2501 8.13577 16.8833 8.13577 17.2738 8.52629Z"
+								      fill="#303030"></path>
+								  	</svg>
+				    			</div>
+				    		</li>
+			    			<li class="menu-item">
+			    				<button role='menuitem' tabindex="0" class="btn btn-light">
+			    					<img src="https://crushingit.tech/hackathon-assets/icon-store.svg" class="icon store">All stores
+			    				</button>
+							</li>
+			    			<hr>
+		    				<li class="menu-item">
+		    					<button role='menuitem' tabindex="0" class="btn btn-light">Help Center</button>
+		    				</li>
+		    				<li class="menu-item">
+		    					<button role='menuitem' tabindex="0" class="btn btn-light">Changelog</button>
+		    				</li>
+		    				<li class="menu-item">		    					
+		    					<button role='menuitem' tabindex="0" class="btn btn-light">Community forums</button>
+		    				</li>
+		    				<li class="menu-item">		    					
+		    					<button role='menuitem' tabindex="0" class="btn btn-light">Hire a Shopify Partner</button>
+		    				</li>
+		    				<li class="menu-item">
+		    					<button role='menuitem' tabindex="0" class="btn btn-light">Keyboard shortcuts</button>
+		    				</li>
+		    				<hr>
+		    				<li class="menu-item">
+		    					<button role='menuitem' tabindex="0" class="btn btn-light">
+		    						David Micheal<span>davidmicheal@gmail.com</span>
+		    					</button>		    				
+		    				</li>
+		    				<li class="menu-item">
+		    					<button role='menuitem' tabindex="0" class="btn btn-light">Manage account</button>
+		    				</li>
+		    				<li class="menu-item">
+		    					<button role='menuitem' tabindex="0" class="btn btn-light">Log out</button>
+		    				</li>
+		    			</ul>
+				    </div>
+				</div>
+			</nav>
+		</header>
+		<!-- NAVBAR HAEDER END -->
+
+
+		<!-- MAIN CONTENT START -->
+		<main>
+
+			<!-- CONTENT WRAPPER START -->
+			<div class="content-wrapper">
+
+			<!-- MESSAGE HEADER START -->
+			<section class="message-header">
+				<p>Extend your trial for $1/month for 3 months on select plans.</p>
+				<a href="https://shopify.com/pricing">
+					<button name="plan" class="btn btn-white">Select a plan</button>
+				</a>
+				<img src="https://crushingit.tech/hackathon-assets/icon-cross.svg" alt="close-message" class="close icon" role="button" aria-label="Close Ad Select Plan">
+			</section>
+			<!-- MESSAGE HEADER END-->
+
+			<!-- CONTENT START -->
+			<section class="setup-guide">
+				<div class="setup">
+					<h2>Setup guide</h2>
+					<p>Use this personalized guide to get your store up and running.</p>
+					<div class="progress">
+						<span><span class="count-completed"></span> / 5 completed</span>
+						<progress value="3" max="5"></progress>
+					</div>
+					<button id="toggle-guide" class="toggle-guide popup btn-light" aria-haspopup='true' aria-expanded='true' aria-controls='guide'>
+						<img src="https://crushingit.tech/hackathon-assets/icon-arrow-up.svg" alt="arrow-drop-guide" class="arrow icon">
+					</button>			
+				</div>
+				<ul class="guide" id="guide" aria-labelledby='toggle-guide'>
+					<li class="active-tab">
+						<div class="tab-title">
+							<input type="checkbox" id='select1'>
+							<label for="select1">Customize your online store</label>
+						</div>
+						<div class="tab-content active">
+							<div class="info">
+								<p>Choose a theme and add your logo, colors, and images to reflect your brand. <a href="">Learn more</a></p>
+								<button name="theme" class="btn btn-dark">Customize theme</button>
+							</div>
+
+							<div class="image">
+								<img src="https://crushingit.tech/hackathon-assets/customise-store.png" alt="custom-store-image" class="tab-img">
+								<div class="overlay"></div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="tab-title">
+							<input type="checkbox" id='select2'>
+							<label for="select2">Add your first product</label>
+						</div>
+						<div class="tab-content">
+							<div class="info">
+								<p>Write a description, add photos, and set pricing for the products you plan to sell. <a href="">Learn more</a></p>
+								<div class="buttons">
+									<button name="add" class="btn btn-dark">Add product</button>
+									<button name="import" class="btn btn-light">Import product</button>
+								</div>
+							</div>
+
+							<div class="image">
+								<img src="https://crushingit.tech/hackathon-assets/product.png" alt="product-image" class="tab-img">
+								<div class="overlay"></div>
+							</div>
+						</div>					
+					</li>
+					<li>
+						<div class="tab-title">
+							<input type="checkbox" id='select3'>
+							<label for="select3">Add a custom domain</label>
+						</div>
+						<div class="tab-content">
+							<div class="info">
+								<p>Your current domain is 222219.myshopify.com but you can add a custom domain to help customers find your online store. <a href="">Learn more</a></p>
+								<button name="domain" class="btn btn-dark">Add domain</button>
+							</div>
+
+							<div class="image">
+								<img src="https://crushingit.tech/hackathon-assets/website.png" alt="website-image" class="tab-img">
+								<div class="overlay"></div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="tab-title">
+							<input type="checkbox" id='select4'>
+							<label for="select4">Name your store</label>
+						</div>
+						<div class="tab-content">
+							<div class="info">
+								<p>Your temporary store name is currently Davii collections. The store name appears in your admin and your online store. <a href="">Learn more</a></p>
+								<button name="store" class="btn btn-dark">Name store</button>
+							</div>
+
+							<div class="image">
+								<img src="https://crushingit.tech/hackathon-assets/name-store.png" alt="store-image" class="tab-img">
+								<div class="overlay"></div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="tab-title">
+							<input type="checkbox" id='select5'>
+							<label for="select5">Set up a payment provider</label> 
+						</div>
+						<div class="tab-content">
+							<div class="info">
+								<p>Choose a payment provider to start accepting payments. You’ll need to create an account with the payment provider and set it up with your Shopify store. <a href="">Learn more</a></p>
+								<button name="payment" class="btn btn-dark">Set up a payment</button>
+							</div>
+
+							<div class="image">
+								<img src="https://crushingit.tech/hackathon-assets/payment.png" alt="payment-image" class="tab-img">
+								<div class="overlay"></div>
+							</div>
+						</div>					
+					</li>
+				</ul>
+			</section>
+			<!-- CONTENT END -->
+
+			</div>
+			<!-- CONTENT WRAPPER END -->
+
+		</main>
+		<!-- MAIN CONTENT END -->
+		
+	</div>
+	<!-- PAGE WRAPPER END -->
+  
+<!-- REQUIRED SCRIPTS -->
+<script src="app.js"></script>
+
+</body>
+
+</html>
