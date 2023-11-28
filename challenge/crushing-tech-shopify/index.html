@@ -4,6 +4,9 @@
 <head> 
 
 	<meta charset="utf-8">
+	<meta name="author" content="Benedicte Tuteka Mukuta aka Blessing Tutka">
+	<meta name="description" content="A Simple Shopify Dashboard">
+	<meta name="keywords" content="Shopify">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Shopify</title>
@@ -37,7 +40,7 @@
 
 			    <div class="account">
 				    <div class="acc noti"> 
-				    	<button id="notification-menu" aria-haspopup='true' aria-expanded='false' aria-controls='notification-menu-content' class="popup"><img src="https://crushingit.tech/hackathon-assets/icon-bell.svg" alt="bell-icon"></button>
+				    	<button id="notification-menu" aria-haspopup='true' aria-expanded='false' aria-controls='notification-menu-content' class="popup" aria-label='User notifications'><img src="https://crushingit.tech/hackathon-assets/icon-bell.svg" alt="bell-icon"></button>
 				    	<div class="dropdown" id="notification-menu-content" role='menu' aria-labelledby='notification-menu'>
 				    		<div class="title">
 				    			<p>Alerts</p>
@@ -52,8 +55,8 @@
 				    	</div>
 				    </div>
 				    <div class='acc user'>
-				    	<button id="profile-menu" aria-haspopup='true' aria-expanded='false' aria-controls='profile-menu-content' class="popup" aria-label=''>
-				    		<span class="name">Davii Collections</span><span class="type">DC</span>
+				    	<button id="profile-menu" aria-haspopup='true' aria-expanded='false' aria-controls='profile-menu-content' class="popup" aria-label='User Store account menu'>
+				    		<span class="name" aria-label="User Store Name">Davii Collections</span><span class="type" aria-label="User Store Type">DC</span>
 				    	</button>
 			    		<ul class="dropdown" id="profile-menu-content" role='menu' aria-labelledby='profile-menu'>
 				    		<li class="title menu-item ">
@@ -68,7 +71,7 @@
 				    		</li>
 			    			<li class="menu-item">
 			    				<button role='menuitem' tabindex="0" class="btn btn-light">
-			    					<img src="https://crushingit.tech/hackathon-assets/icon-store.svg" class="icon store">All stores
+			    					<img src="https://crushingit.tech/hackathon-assets/icon-store.svg" class="icon store" aria-hidden='true'>All stores
 			    				</button>
 							</li>
 			    			<hr>
@@ -116,10 +119,10 @@
 			<!-- MESSAGE HEADER START -->
 			<section class="message-header">
 				<p>Extend your trial for $1/month for 3 months on select plans.</p>
-				<a href="https://shopify.com/pricing" target="_blank" rel="noreferrer noopener">
+				<a href="https://shopify.com/pricing" title="go to shopify pricing" target="_blank" rel="noreferrer noopener">
 					<button name="plan" class="btn btn-white">Select a plan</button>
 				</a>
-				<img src="https://crushingit.tech/hackathon-assets/icon-cross.svg" alt="close-message" class="close icon" role="button" aria-label="Close Ad Select Plan">
+				<img src="https://crushingit.tech/hackathon-assets/icon-cross.svg" alt="close-message" class="close icon" role="button" aria-label="Close advertisement Select Plan">
 			</section>
 			<!-- MESSAGE HEADER END-->
 
@@ -132,8 +135,8 @@
 						<span><span class="count-completed"></span> / 5 completed</span>
 						<progress value="3" max="5"></progress>
 					</div>
-					<button id="toggle-guide" class="toggle-guide popup btn-light" aria-haspopup='true' aria-expanded='true' aria-controls='guide'>
-						<img src="https://crushingit.tech/hackathon-assets/icon-arrow-up.svg" alt="arrow-drop-guide" class="arrow icon">
+					<button id="toggle-guide" class="toggle-guide popup btn-light" aria-haspopup='true' aria-expanded='true' aria-controls='guide' aria-label='Guide list'>
+						<img src="https://crushingit.tech/hackathon-assets/icon-arrow-up.svg" alt="arrow-drop-guide" class="arrow icon" aria-hidden='true'>
 					</button>			
 				</div>
 				<ul class="guide" id="guide" aria-labelledby='toggle-guide'>
@@ -149,7 +152,7 @@
 							</div>
 
 							<div class="image">
-								<img src="https://crushingit.tech/hackathon-assets/customise-store.png" alt="custom-store-image" class="tab-img">
+								<img src="https://crushingit.tech/hackathon-assets/customise-store.png" alt="custom store image" class="tab-img">
 								<div class="overlay"></div>
 							</div>
 						</div>
@@ -161,7 +164,7 @@
 						</div>
 						<div class="tab-content">
 							<div class="info">
-								<p>Write a description, add photos, and set pricing for the products you plan to sell. <a href="https://help.shopify.com/en/manual/sell-in-person/shopify-pos/inventory-management/products/create-new-product" class="decoretor" target="_blank" rel="noreferrer noopener">Learn more</a></p>
+								<p>Write a description, add photos, and set pricing for the products you plan to sell. <a href="https://help.shopify.com/en/manual/sell-in-person/shopify-pos/inventory-management/products/create-new-product" title="Learn more about how to add your first product" class="decoretor" target="_blank" rel="noreferrer noopener">Learn more</a></p>
 								<div class="buttons">
 									<button name="add" class="btn btn-dark">Add product</button>
 									<button name="import" class="btn btn-light">Import product</button>
@@ -169,7 +172,7 @@
 							</div>
 
 							<div class="image">
-								<img src="https://crushingit.tech/hackathon-assets/product.png" alt="product-image" class="tab-img">
+								<img src="https://crushingit.tech/hackathon-assets/product.png" alt="product image" class="tab-img">
 								<div class="overlay"></div>
 							</div>
 						</div>					
@@ -186,7 +189,7 @@
 							</div>
 
 							<div class="image">
-								<img src="https://crushingit.tech/hackathon-assets/website.png" alt="website-image" class="tab-img">
+								<img src="https://crushingit.tech/hackathon-assets/website.png" alt="website domain image" class="tab-img">
 								<div class="overlay"></div>
 							</div>
 						</div>
@@ -203,7 +206,7 @@
 							</div>
 
 							<div class="image">
-								<img src="https://crushingit.tech/hackathon-assets/name-store.png" alt="store-image" class="tab-img">
+								<img src="https://crushingit.tech/hackathon-assets/name-store.png" alt="store image" class="tab-img">
 								<div class="overlay"></div>
 							</div>
 						</div>
@@ -220,7 +223,7 @@
 							</div>
 
 							<div class="image">
-								<img src="https://crushingit.tech/hackathon-assets/payment.png" alt="payment-image" class="tab-img">
+								<img src="https://crushingit.tech/hackathon-assets/payment.png" alt="payment image" class="tab-img">
 								<div class="overlay"></div>
 							</div>
 						</div>					
