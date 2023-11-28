@@ -497,6 +497,10 @@ main{
   color: #005BD3;
   text-decoration: none;
 }
+.tab-content .info a.decoretor {
+  text-decoration: underline;
+}
+
 .tab-content .image  {
   height: 120px;
   position: relative;
@@ -609,6 +613,10 @@ main{
 
     .setup-guide{
       border-radius: 0px;
+      margin-left: 0px;
+      margin-right: 0px;
+      border-left: none;
+      border-right: none;
     }
 
     .tab-content .image  {
